@@ -75,20 +75,20 @@ In Brella's context, there can be:
 
 - If you would have one week to implement some of those solutions, which would you pick and why?
 
-  I would prefer to implement these 4 solution ( API Pagination, Lazy Loading, Service Objects, Profiling),
-  since these are must for any type of system independent of scale.
-
-
-  Other items like (API Caching, Microservices, DB Master Slave or Sharding) are definitely the next level of activities any Scalable system should follow.
-  But lot of parameters have to be considered before getting into these activities.
+    I would prefer to implement these 4 solution ( API Pagination, Lazy Loading, Service Objects, Profiling),
+    since these are must for any type of system independent of scale.
+    
+    
+    Other items like (API Caching, Microservices, DB Master Slave or Sharding) are definitely the next level of activities any Scalable system should follow.
+    But lot of parameters have to be considered before getting into these activities.
 
     1. API Pagination
 
         API Pagination should be the first options when we know the system is going to have more data.
         Benefits with pagination:
 
-        1. DB Queries and serialization will be faster. (Since we fetch fixed set of data with filters)
-        2. Reduces burden on client. (Client doesn't need to download more data)
+        - DB Queries and serialization will be faster. (Since we fetch fixed set of data with filters)
+        - Reduces burden on client. (Client doesn't need to download more data)
 
    2. Lazy Loading of nested resources. (Like fetching Associated meetings or Associated users on demand)
 
