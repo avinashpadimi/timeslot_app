@@ -12,6 +12,9 @@ class Meeting < ApplicationRecord
   scope :by_requester, ->(user) { where(requester: user) }
   scope :by_receiver, ->(user) { where(receiver: user) }
   
+  # Definition of User Meetings:
+  #   Any meeting where user is either requester or receiver 
+  #
   def self.active_meetings_by_user_event user, event
     Meeting.by_requester(user).or(Meeting.by_receiver(user)).active.by_event(event)
   end

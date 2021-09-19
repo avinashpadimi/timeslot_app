@@ -38,5 +38,5 @@ en:
     messages:
       unauthorized: Unauthorized
       forbidden: Forbidden
-      unprocessiable_entity: UnprocessiableEntity
+      unprocessable_entity: UnprocessableEntity
  

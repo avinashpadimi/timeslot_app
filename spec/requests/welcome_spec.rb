@@ -13,7 +13,7 @@ RSpec.describe "Welcome spec", type: :request do
       it "should return with correct status code and respond with serialized user data" do
         get(welcome_index_path, headers: {'Authorization': user.id})
         expect(response.status).to eq 200
-        expect(response_data_attributes["first_name"]).to eq(user.first_name)
+        expect(response_data_attributes["firstName"]).to eq(user.first_name)
       end
     end
   end
